@@ -1,0 +1,26 @@
+﻿<Window x:Class="Studente_per_un_giorno_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Studente_per_un_giorno_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="597.546">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFFFF300" Offset="0"/>
+                <GradientStop Color="#FFFF0707" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="NUMBER GENERATION" HorizontalAlignment="Left" Height="54" Margin="52,50,0,0" VerticalAlignment="Top" Width="237" FontWeight="Bold" FontSize="20"/>
+        <Slider IsEnabled="False" Name="addendo1" HorizontalAlignment="Left" Margin="379,156,0,0" VerticalAlignment="Top" Width="151" Height="43" ValueChanged="addendo1_ValueChanged" Background="{x:Null}"/>
+        <Slider IsEnabled="False" Name="addendo2" HorizontalAlignment="Left" Margin="379,238,0,0" VerticalAlignment="Top" Width="151" RenderTransformOrigin="0.541,1.266" Height="39" ValueChanged="addendo2_ValueChanged"/>
+        <TextBox IsReadOnly="True" Name="TxtAddendo1" HorizontalAlignment="Left" Height="50" Margin="118,149,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="171" FontSize="20" Background="{x:Null}"/>
+        <TextBox IsReadOnly="True" Name="TxtAddendo2" HorizontalAlignment="Left" Height="50" Margin="118,227,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="171" FontSize="20" Background="{x:Null}"/>
+        <Label Content="SUM:" HorizontalAlignment="Left" Margin="118,318,0,0" VerticalAlignment="Top" Width="72" Background="{x:Null}" Height="38" FontSize="20" FontWeight="Bold"/>
+        <TextBox IsReadOnly="True" Name="TxtSomma"  HorizontalAlignment="Left" Height="58" Margin="310,320,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="220" Background="{x:Null}"/>
+        <CheckBox Content="Enabled" HorizontalAlignment="Left" Margin="389,64,0,0" VerticalAlignment="Top" Width="112" Height="27" FontSize="18" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+
+    </Grid>
+</Window>
